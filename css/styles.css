@@ -230,7 +230,7 @@ header {
     visibility: visible;
     display: flex;
     gap: 2rem;
-    /* position: static; */
+    position: static;
     height: max-content;
     width: max-content;
   }
