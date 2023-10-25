@@ -20,53 +20,79 @@
     <div class="wrapper">
       <header>
         <img src="./assets/images/logo.svg" alt="logo" class="logo" />
-        <div class="menu">
+        <nav class="menu">
+          <ul class="navbar" id="navbar">
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt="Botón para cerrar  menú mobile"
+              id="close-menu"
+            />
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
           <img
             src="./assets/images/icon-menu.svg"
             alt="Botón para abrir menú mobile"
+            id="open-menu"
           />
-        </div>
+        </nav>
       </header>
       <main>
-        <article class="main-article">
-          <img
-            src="./assets/images/image-web-3-mobile.jpg"
-            alt="imagen web 3"
-            class="main-article-img"
-          />
-          <h1 class="main-article-title">The Bright Future of Web 3.0?</h1>
-          <p class="main-article-description">
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <a class="read-more" href="#">Read more</a>
-        </article>
-        <section class="new">
-          <h2 class="new-title">New</h2>
-          <div class="new-wrapper">
-            <article class="new-article">
-              <h3 class="new-article-title">Hydrogen VS Electric Cars</h3>
-              <p class="new-article-description">
-                Will hydrogen-fueled cars ever catch up to EVs?
-              </p>
-            </article>
-            <article class="new-article">
-              <h3 class="new-article-title">The Downsides of AI Artistry</h3>
-              <p class="new-article-description">
-                What are the possible adverse effects of on-demand AI image
-                generation?
-              </p>
-            </article>
-            <article class="new-article">
-              <h3 class="new-article-title">Is VC Funding Drying Up?</h3>
-              <p class="new-article-description">
-                Private funding by VC firms is down 50% YOY. We take a look at
-                what that means.
-              </p>
-            </article>
-          </div>
-        </section>
+        <div class="main-wrapper">
+          <article class="main-article">
+            <!-- Imagen para mobile -->
+            <img
+              src="./assets/images/image-web-3-mobile.jpg"
+              alt="imagen web 3"
+              class="main-article-img mobile"
+            />
+            <!-- Imagen para desktop -->
+            <img
+              src="./assets/images/image-web-3-desktop.jpg"
+              alt="imagen web 3"
+              class="main-article-img desktop"
+            />
+            <div class="main-article-content">
+              <h1 class="main-article-title">The Bright Future of Web 3.0?</h1>
+              <div class="main-article-content-secondary">
+                <p class="main-article-description">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <a class="read-more" href="#">Read more</a>
+              </div>
+            </div>
+          </article>
+          <section class="new">
+            <h2 class="new-title">New</h2>
+            <div class="new-wrapper">
+              <article class="new-article">
+                <h3 class="new-article-title">Hydrogen VS Electric Cars</h3>
+                <p class="new-article-description">
+                  Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+              </article>
+              <article class="new-article">
+                <h3 class="new-article-title">The Downsides of AI Artistry</h3>
+                <p class="new-article-description">
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <article class="new-article">
+                <h3 class="new-article-title">Is VC Funding Drying Up?</h3>
+                <p class="new-article-description">
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
         <section class="secondary">
           <article class="secondary-article">
             <img
@@ -112,7 +138,7 @@
           </article>
         </section>
       </main>
-      <!-- Home New Popular Trending Categories -->
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
